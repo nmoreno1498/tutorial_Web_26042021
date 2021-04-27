@@ -1,0 +1,78 @@
+﻿#container-geral {
+    margin: 3em;
+    padding: 1em;
+    background-color: #FBD7AD;
+    text-align:center;
+}
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: rgb(90 161 212);
+}
+#container-geral {
+    border: 3px solid black;
+}
+
+#container-rua {
+    float: right;
+    text-align: center;
+    border: 3px solid black;
+    width: 40%;
+}
+
+p::first-letter {
+    color: red;
+}
+
+#img-author {
+    width: 180px;
+    height: 180px;
+}
+
+#titulo-cv {
+    text-align: center;
+}
+
+input[type=text], textarea, select {
+    width: 78%;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+li::first-letter {
+    color: rgb(255 106 0);
+}
+
+td, th {
+    border: 3px solid black;
+}
+
+table, table th, table td {
+    border-collapse: collapse;
+    width: 30%;
+}
+
+    table tr:nth-child(2n+1) td {
+        background-color: #FF9869;
+        color: white;
+    }
+
+li:hover {
+    background-color: white;
+    color: rgb(243 173 124);
+}
+
+#container-foto {
+    float: left;
+    text-align: center;
+    width: 200px;
+    border: 3px solid black;
+    margin:1em;
+}
+.container{
+    border:3px solid black;
+    margin:0.5rem;
+    width:80%;
+    margin:1em;
+}

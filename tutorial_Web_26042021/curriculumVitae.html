@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Nicolas Moreno" />
+    <meta name="description" content="CV realizado com HTML, JS, jQuery" />
+    <link rel="stylesheet" href="cv.css" />
+    <link rel="stylesheet" href="lupa.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <title>Cv Nicolas Moreno</title>
+</head>
+<body>
+    <h1 id="titulo-cv">Curriculum Vitae</h1>
+    <div id="container-geral">
+        <div id="container-rua">
+            <p>Rua Soldado R. Moreno 2252</p>
+            <p>Isidro Casanova, Buenos Aires Argentina</p>
+            <p>Telefone: 1124937381</p>
+            <p>gmail: nmoreno1498@gmail.com</p>
+        </div>
+        <div id="container-foto">
+            <img id="img-author" src="nicolasMoreno.jpg" alt="foto author" onmousemove="atualizarPocisao(event)" />
+            <div id="zoom" class="zoom">
+                <div id="imagemZoom"></div>
+            </div>
+            <h1 id="nome-author">Nicolás Ezequiel Moreno</h1>
+        </div>
+        <div class="clear-fix"></div>
+        <div class="container">
+            <h2>1-Objetivos</h2>
+            <p>Analista Programador Jr.</p>
+        </div>
+        <div class="container">
+            <h2>2-Formaçao Academica</h2>
+            <ul><li>Ano:Curso(UNLAM)</li></ul>
+            <ul><li>Ano:Curso(USP)</li></ul>
+            <ul><li>Ano:Curso(ADP)</li></ul>
+            <ul><li>Ano:Curso(BBA)</li></ul>
+        </div>
+        <div class="container">
+            <h2>3-Experiencia Professional</h2>
+            <ul><li>Tecnico em manutençao de Aeronaves</li></ul>
+            <ul><li>Tecnico em manutençao de Motos</li></ul>
+            <ul><li>Desenvolvedor FRONT-END BACK-END</li></ul>
+        </div>
+        <div class="container">
+            <h2>4-Disciplinas Concluidas</h2>
+            <center>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Disciplina</th>
+                            <th>Curso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">2020</td>
+                            <td>ALP</td>
+                            <td>AoC</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>ALP</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>ALP</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Qualquer texto</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br />
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Disciplina</th>
+                            <th>Curso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">2020</td>
+                            <td>ALP</td>
+                            <td>AoC</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>ALP</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>ALP</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Qualquer texto</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br />
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Disciplina</th>
+                            <th>Curso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020</td>
+                            <td>WEB FORMS</td>
+                            <td>Programaçao AutB</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>WEB FORMS</td>
+                            <td>Programaçao AutB</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>WEB FORMS</td>
+                            <td>Programaçao AutB</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descricao</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pai Celestial</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jesus Cristo</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Familia</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Estudos</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+            </center>
+        </div>
+        <div class="container">
+            <h2>5-Idiomas</h2>
+            <ul><li>Portugués Avanzado</li></ul>
+            <ul><li>Inglés Intermediate-High</li></ul>
+            <ul><li>Espanhol Nativo</li></ul>
+        </div>
+        <div class="container">
+            <h2>6-Entre em Contato</h2>
+            <form>
+                <label>Nome:</label><br />
+                <input id="nome" type="text" placeholder="Informe seu Nome" onclick="alterarConteudo()" /><br />
+                <br />
+                <label>Assunto:</label><br />
+                <input type="text" /><br />
+                <br />
+                <label>Endereço</label><br />
+                <input id="endereço" type="text" placeholder="Informe seu Endereço" onclick="alterarConteudo()" />
+                <br />
+                <br />
+                <label><b><u>Genero</u></b></label><br />
+                <label>Masculino</label>
+                <input type="radio" value="masculino" />
+                <label>Femenino</label>
+                <input type="radio" value="Femenino" />
+                <label>Indefinido</label>
+                <input type="radio" value="Indefinido" /><br />
+                <br />
+                <label>Quero receber mais informaçoes</label>
+                <input type="checkbox" checked /><br />
+                <br />
+                <label>Sua mensagem</label><br />
+                <textarea rows="5">Conteudo atual</textarea><br />
+                <br />
+                <input type="button" value="alterar" onclick="alterarConteudo" />
+                <input id="alteraJq" type="button" value="Alterar jQuery" />
+                <input type="button" value="Enviar" />
+                <label>
+                    <br />
+                    <br />
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#nome').blur(function () {
+                var campoNombre = $('#nome');
+                if ($('#nome').val().trim() == '') {
+                    campoNombre.css("background-color", "lightgray");
+                    $("#nome").css("border", "3px solid red");
+                    campoNombre.text($('#nome-author').html());
+                } else {
+                    $('#nome').css("background-color", "lightgreen");
+                }
+            });
+            $('#nome').click(function () {
+                $('#nome-author').html($('#nome').val());
+                $('#nome').val('Nicolás');
+            });
+
+            $("#endereço").blur(function () {
+                var campoEnderecoJQ = $("#endereço");
+                if ($("#endereço").val().trim() == "") {
+                    campoEnderecoJQ.css("background-color", "lightgray");
+                    $("#endereço").css("border", "3px solid red");
+                    $("#nome").val($("#nome-author").html().toString());
+                    $("#nome").css({ "background-color": "#fff", "border": "", "display": "block", "width": "50%Important" })
+                } else {
+                    $("#endereço").css("background-color", "lightgreen");
+                    campoEnderecoJQ.css("border", "3px solid blue");
+                    $("#nome").val("Nicolas Ezequiel Moreno");
+                    $("#nome").css({ "background-color": "rgb(240, 240, 240)", "border": "2px solid #333", "display": "block", "width": "100%" })
+                }
+            });
+            $("#alteraNomejq").on("click", function () {
+                $("#nome").val("Nicolas Ezequiel Moreno");
+                $("#nome-author").html($("#nome").val());
+
+            });
+        });
+
+        function alterarConteudo() {
+            document.getElementById('nome-author').innerHTML = document.getElementById('nome').value;
+            document.getElementById('nome').value = 'Nicolás';
+        }
+
+
+        function atualizarPocisao(e) {
+            var divZoom = document.getElementById('zoom');
+            divZoom.style.display = 'block';
+            divZoom.style.left = (e.clientX + 2) + 'px';
+            divZoom.style.top = (e.clientY + 2) + 'px';
+            var deltaX = (e.clientX);
+            var deltaY = (e.clientY);
+            deltaX *= -1;
+            deltaY *= -1;
+            deltaX += 150;
+            deltaY += 190;
+            document.getElementById('imagemZoom').style.backgroundPosition = deltaX + 'px' + ' ' + deltaY + 'px';
+        }
+    </script>
+</body>
+</html>

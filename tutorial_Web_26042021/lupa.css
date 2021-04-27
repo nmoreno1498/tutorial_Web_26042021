@@ -1,0 +1,20 @@
+﻿#imagemZoom {
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    width: 50%;
+    height: 50%;
+    background-color: #000000;
+    background-image: url(nicolasMoreno.jpg);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+
+.zoom {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px inset #FFF;
+}
